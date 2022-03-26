@@ -27,14 +27,12 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener clickNum = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
             }
         };
 
         View.OnClickListener clickAct = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
             }
         };
 
