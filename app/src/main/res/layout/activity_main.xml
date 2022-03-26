@@ -8,19 +8,21 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="120dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="530dp"
+        android:text="@string/text"
         android:textColor="#8B4513"
         android:textSize="40sp"
+        android:gravity="right"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/fkgjhfdgkfgj" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button1"
@@ -163,7 +165,7 @@
         app:layout_constraintEnd_toEndOf="@id/button8"
         app:layout_constraintStart_toStartOf="@id/button8"
         app:layout_constraintTop_toBottomOf="@id/button8"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <Button
         android:id="@+id/comma"
@@ -229,6 +231,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="-10dp"
         android:layout_marginEnd="45dp"
+        android:layout_marginBottom="23dp"
         android:backgroundTint="#2AFF5722"
         android:text="@string/multiply"
         android:textColor="#8B4513"
@@ -244,6 +247,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
         android:layout_marginTop="-10dp"
+        android:layout_marginBottom="23dp"
         android:backgroundTint="#2AFF5722"
         android:text="@string/divide"
         android:textColor="#8B4513"
@@ -257,31 +261,16 @@
         android:id="@+id/del"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="-10dp"
+        android:layout_marginTop="380dp"
         android:backgroundTint="#2AFF5722"
         android:text="@string/del"
         android:textColor="#8B4513"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/delete"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divide"
-        tools:ignore="TextContrastCheck" />
-
-    <Button
-        android:id="@+id/delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-10dp"
-        android:layout_marginEnd="140dp"
-        android:backgroundTint="#2AFF5722"
-        android:text="@string/clear"
-        android:textColor="#8B4513"
-        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/equals"
-        app:layout_constraintTop_toBottomOf="@id/multiply"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,TextContrastCheck" />
 
     <TextView
         android:layout_width="wrap_content"
