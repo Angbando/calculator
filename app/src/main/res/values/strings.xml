@@ -16,7 +16,7 @@
     <string name="equals">=</string>
     <string name="multiply">*</string>
     <string name="divide">/</string>
-    <string name="del">del</string>
+    <string name="del">clear</string>
     <string name="credits">made in Angbando</string>
     <string name="text">0</string>
 </resources>

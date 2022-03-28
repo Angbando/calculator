@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    TextView text;
+    private TextView text;
 
     private Calculate calculate;
 
@@ -27,12 +27,16 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener clickNum = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                calculate.numPress(view.getId());
+                text.setText(calculate.numText());
             }
         };
 
         View.OnClickListener clickAct = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                calculate.actPress(view.getId());
+                text.setText(calculate.numText());
             }
         };
 
