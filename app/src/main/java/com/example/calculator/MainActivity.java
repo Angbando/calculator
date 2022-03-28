@@ -1,5 +1,6 @@
 package com.example.calculator;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -47,5 +48,6 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < actButtons.length; i++) {
             findViewById(actButtons[i]).setOnClickListener(clickAct);
         }
+
     }
 }
