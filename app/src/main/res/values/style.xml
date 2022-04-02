@@ -19,6 +19,7 @@
     </style>
     <style name="Text.">
         <item name="android:background">#ddd3c9</item>
+        <item name="android:textColor">#4c5050</item>
     </style>
 
     <style name="ButtonsGray">
