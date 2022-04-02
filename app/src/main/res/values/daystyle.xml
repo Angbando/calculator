@@ -6,6 +6,12 @@
     <style name="Back.">
         <item name="android:background">@drawable/darktheme</item>
     </style>
+    <style name="BackL">
+        <item name="android:background">@drawable/light2</item>
+    </style>
+    <style name="BackL.">
+        <item name="android:background">@drawable/dark2</item>
+    </style>
     <style name="Text">
         <item name="android:gravity">right</item>
         <item name="android:textSize">@dimen/text_size</item>
@@ -24,6 +30,10 @@
     </style>
     <style name="ButtonsGray.">
         <item name="android:backgroundTint">#b5bbbb</item>
+        <item name="android:textColor">#4c5050</item>
+    </style>
+    <style name="ButtonsGray.2">
+        <item name="android:textSize">@dimen/num_size_l</item>
     </style>
 
     <style name="Buttons">
@@ -35,6 +45,9 @@
     </style>
     <style name="Buttons.">
         <item name="android:backgroundTint">#e9b7b6</item>
+    </style>
+    <style name="Buttons.2">
+        <item name="android:textSize">@dimen/num_size_l</item>
     </style>
 
     <style name="Credit">
