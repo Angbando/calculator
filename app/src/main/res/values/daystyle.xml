@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="Back">
+    <item name="android:background">@drawable/lighttheme</item>
+</style>
+    <style name="Text">
+
+    </style>
+
+    <style name="ButtonsGray">
+        <item name="backgroundTint">#424242</item>
+        <item name="fontFamily">@font/hafont</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/num_size</item>
+        <item name="cornerRadius">100dp</item>
+
+    </style>
+
+    <style name="Buttons">
+
+    </style>
+</resources>
