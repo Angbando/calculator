@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="Back">
+    <item name="android:background">@drawable/lighttheme</item>
+</style>
+    <style name="Back.">
+        <item name="android:background">@drawable/darktheme</item>
+    </style>
+    <style name="BackL">
+        <item name="android:background">@drawable/light2</item>
+    </style>
+    <style name="BackL.">
+        <item name="android:background">@drawable/dark2</item>
+    </style>
+    <style name="Text">
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">@dimen/text_size</item>
+<item name="android:background">#f9f1e6</item>
+    </style>
+    <style name="Text.">
+        <item name="android:background">#ddd3c9</item>
+        <item name="android:textColor">#4c5050</item>
+    </style>
+
+    <style name="ButtonsGray">
+        <item name="backgroundTint">#424242</item>
+        <item name="fontFamily">@font/oblique</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/num_size</item>
+        <item name="cornerRadius">100dp</item>
+    </style>
+    <style name="ButtonsGray.">
+        <item name="android:backgroundTint">#b5bbbb</item>
+        <item name="android:textColor">#4c5050</item>
+    </style>
+    <style name="ButtonsGray.2">
+        <item name="android:textSize">@dimen/num_size_l</item>
+    </style>
+    <style name="ButtonsGray.2.">
+        <item name="android:backgroundTint">#b5bbbb</item>
+        <item name="android:textColor">#4c5050</item>
+    </style>
+
+    <style name="Buttons">
+        <item name="backgroundTint">#f9bb92</item>
+        <item name="fontFamily">@font/oblique</item>
+        <item name="android:textColor">#424242</item>
+        <item name="android:textSize">@dimen/num_size</item>
+        <item name="cornerRadius">100dp</item>
+    </style>
+    <style name="Buttons.">
+        <item name="android:backgroundTint">#e9b7b6</item>
+    </style>
+    <style name="Buttons.2">
+        <item name="android:textSize">@dimen/num_size_l</item>
+    </style>
+    <style name="Buttons.2.">
+        <item name="android:backgroundTint">#e9b7b6</item>
+    </style>
+
+    <style name="Credit">
+        <item name="android:textColor">#424242</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:fontFamily">cursive</item>
+    </style>
+</resources>

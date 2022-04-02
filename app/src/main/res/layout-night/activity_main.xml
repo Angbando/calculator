@@ -4,261 +4,247 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/BackL"
+    style="@style/Back."
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="11dp"
-        style="@style/Text"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="530dp"
+        style="@style/Text."
         android:text="@string/text"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="RtlHardcoded" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="215dp"
         android:layout_marginEnd="-45dp"
-        style="@style/ButtonsGray.2"
         android:text="@string/key_1"
+        style="@style/ButtonsGray."
         app:layout_constraintEnd_toStartOf="@id/button2"
-        app:layout_constraintHorizontal_bias="0.802"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
-        style="@style/Buttons.2"
+        android:layout_marginTop="215dp"
         android:text="@string/key_2"
+        style="@style/Buttons."
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="-45dp"
-        android:layout_marginTop="112dp"
-        style="@style/ButtonsGray.2"
+        android:layout_marginTop="216dp"
+        style="@style/ButtonsGray."
         android:text="@string/key_3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.197"
         app:layout_constraintStart_toEndOf="@id/button2"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-10dp"
-        style="@style/Buttons.2"
+        style="@style/Buttons."
         android:text="@string/key_4"
         app:layout_constraintEnd_toEndOf="@id/button1"
         app:layout_constraintStart_toStartOf="@id/button1"
         app:layout_constraintTop_toBottomOf="@id/button1"
         tools:ignore="TextContrastCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-10dp"
-        style="@style/ButtonsGray.2"
+        style="@style/ButtonsGray."
         android:text="@string/key_5"
         app:layout_constraintEnd_toEndOf="@id/button2"
         app:layout_constraintStart_toStartOf="@id/button2"
         app:layout_constraintTop_toBottomOf="@id/button2"
         tools:ignore="TextContrastCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-10dp"
-        style="@style/Buttons.2"
+        style="@style/Buttons."
         android:text="@string/key_6"
         app:layout_constraintEnd_toEndOf="@id/button3"
         app:layout_constraintStart_toStartOf="@id/button3"
         app:layout_constraintTop_toBottomOf="@id/button3"
         tools:ignore="TextContrastCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-10dp"
-        style="@style/ButtonsGray.2"
+        style="@style/ButtonsGray."
         android:text="@string/key_7"
         app:layout_constraintEnd_toEndOf="@id/button4"
         app:layout_constraintStart_toStartOf="@id/button4"
         app:layout_constraintTop_toBottomOf="@id/button4"
         tools:ignore="TextContrastCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-10dp"
-        style="@style/Buttons.2"
+        style="@style/Buttons."
         android:text="@string/key_8"
         app:layout_constraintEnd_toEndOf="@id/button5"
         app:layout_constraintStart_toStartOf="@id/button5"
         app:layout_constraintTop_toBottomOf="@id/button5"
         tools:ignore="TextContrastCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-10dp"
-        style="@style/ButtonsGray.2"
+        style="@style/ButtonsGray."
         android:text="@string/key_9"
         app:layout_constraintEnd_toEndOf="@id/button6"
         app:layout_constraintStart_toStartOf="@id/button6"
         app:layout_constraintTop_toBottomOf="@id/button6"
         tools:ignore="TextContrastCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-10dp"
-        style="@style/ButtonsGray.2"
+        style="@style/ButtonsGray."
         android:text="@string/key_0"
-        app:layout_constraintEnd_toStartOf="@id/button8"
-        app:layout_constraintStart_toEndOf="@id/button7"
+        app:layout_constraintEnd_toEndOf="@id/button8"
+        app:layout_constraintStart_toStartOf="@id/button8"
         app:layout_constraintTop_toBottomOf="@id/button8"
         tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/comma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="-10dp"
-        style="@style/Buttons.2"
+        android:layout_marginTop="10dp"
+        style="@style/Buttons."
         android:text="@string/comma"
-        app:layout_constraintStart_toEndOf="@+id/button0"
-        app:layout_constraintTop_toBottomOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button0"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="8dp"
-style="@style/Buttons.2"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="45dp"
+        style="@style/ButtonsGray."
         android:text="@string/plus"
-        app:layout_constraintBottom_toTopOf="@+id/multiply"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/comma"
+        app:layout_constraintTop_toBottomOf="@+id/button9"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/minus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="130dp"
-        android:layout_marginBottom="8dp"
-        style="@style/Buttons.2"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="48dp"
+        style="@style/ButtonsGray."
         android:text="@string/minus"
-        app:layout_constraintBottom_toTopOf="@+id/divide"
+        app:layout_constraintEnd_toStartOf="@id/comma"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/equals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="150dp"
-        style="@style/Buttons.2"
+        android:layout_marginTop="-10dp"
+        style="@style/ButtonsGray."
         android:text="@string/equals"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.234"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73"
+        app:layout_constraintTop_toBottomOf="@id/comma"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/multiply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-
-        android:layout_marginBottom="-70dp"
-        style="@style/ButtonsGray.2"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="23dp"
+        style="@style/Buttons."
         android:text="@string/multiply"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/equals"
+        app:layout_constraintTop_toBottomOf="@id/plus"
         tools:ignore="TextContrastCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/divide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="-70dp"
-
-        style="@style/ButtonsGray.2"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="23dp"
+        style="@style/Buttons."
         android:text="@string/divide"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/equals"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/minus"
         tools:ignore="TextContrastCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/del"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="120dp"
-        style="@style/Buttons.2"
+        android:layout_marginTop="450dp"
+        style="@style/ButtonsGray."
         android:text="@string/del"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.772"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="cursive"
-        android:text="@string/credits"
+        android:layout_marginBottom="30dp"
         style="@style/Credit"
+        android:text="@string/credits"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
 

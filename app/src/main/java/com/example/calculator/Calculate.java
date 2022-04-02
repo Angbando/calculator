@@ -5,22 +5,24 @@ public class Calculate {
     private double twoNum;
     private double actSelect;
 
+    final int STRING_LENGTH = 17;
+
     private StringBuilder inputString = new StringBuilder();
 
     private State state;
 
     public enum State {
-        oneNumInp,
-        twoNumInp,
-        result
+        ONE_NUM_INP,
+        TWO_NUM_INP,
+        RESULT
     }
 
     public Calculate() {
-        state = State.oneNumInp;
+        state = State.ONE_NUM_INP;
     }
 
     public void numPress (int numId) {
-        if (inputString.length() < 17) {
+        if (inputString.length() < STRING_LENGTH) {
             if (numId == R.id.button0) {
                 inputString.append("0");
             } else if (numId == R.id.button1) {
@@ -48,9 +50,9 @@ public class Calculate {
     }
 
     public void actPress (int actId) {
-        if (actId == R.id.equals && state == State.twoNumInp && inputString.length() > 0) {
+        if (actId == R.id.equals && state == State.TWO_NUM_INP && inputString.length() > 0) {
             twoNum = Double.parseDouble(inputString.toString());
-            state = State.result;
+            state = State.RESULT;
             inputString.setLength(0);
             if (actSelect == R.id.plus) {
                 inputString.append(oneNum + twoNum);
@@ -61,9 +63,9 @@ public class Calculate {
             } else if (actSelect == R.id.divide) {
                 inputString.append(oneNum / twoNum);
             }
-        } else if (inputString.length() > 0 && state == State.oneNumInp) {
+        } else if (inputString.length() > 0 && state == State.ONE_NUM_INP) {
             oneNum = Double.parseDouble(inputString.toString());
-            state = State.twoNumInp;
+            state = State.TWO_NUM_INP;
             inputString.setLength(0);
             if (actId == R.id.plus) {
                 actSelect = R.id.plus;
@@ -76,7 +78,7 @@ public class Calculate {
             }
         } else if (actId == R.id.del) {
             inputString.setLength(0);
-            state = State.oneNumInp;
+            state = State.ONE_NUM_INP;
         }
     }
 
