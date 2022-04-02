@@ -35,6 +35,10 @@
     <style name="ButtonsGray.2">
         <item name="android:textSize">@dimen/num_size_l</item>
     </style>
+    <style name="ButtonsGray.2.">
+        <item name="android:backgroundTint">#b5bbbb</item>
+        <item name="android:textColor">#4c5050</item>
+    </style>
 
     <style name="Buttons">
         <item name="backgroundTint">#f9bb92</item>
@@ -48,6 +52,9 @@
     </style>
     <style name="Buttons.2">
         <item name="android:textSize">@dimen/num_size_l</item>
+    </style>
+    <style name="Buttons.2.">
+        <item name="android:backgroundTint">#e9b7b6</item>
     </style>
 
     <style name="Credit">
