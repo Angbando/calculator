@@ -225,10 +225,10 @@ style="@style/Back"
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/del"
+        style="@style/ButtonsGray"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="450dp"
-        style="@style/ButtonsGray"
+        android:layout_marginTop="470dp"
         android:text="@string/del"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -246,6 +246,17 @@ style="@style/Back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="@string/themes"
+        android:id="@+id/themes"
+        style="@style/Buttons"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
