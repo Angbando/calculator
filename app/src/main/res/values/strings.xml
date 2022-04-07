@@ -20,4 +20,7 @@
     <string name="credits">made in Angbando</string>
     <string name="text">0</string>
     <string name="themes">Themes</string>
+    <string name="day">DAY</string>
+    <string name="night">NIGHT</string>
+    <string name="themes_choice">Choice of theme</string>
 </resources>

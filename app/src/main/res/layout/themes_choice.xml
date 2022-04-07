@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <TextView
+      android:id="@+id/day_theme"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/day"
+      android:textSize="@dimen/text_size"
+      style="@style/ChoiceTheme">
+  </TextView>
+
+  <TextView
+      android:id="@+id/night_theme"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/night"
+      android:textSize="@dimen/text_size"
+      style="@style/ChoiceTheme.dark">
+  </TextView>
+
+</LinearLayout>
