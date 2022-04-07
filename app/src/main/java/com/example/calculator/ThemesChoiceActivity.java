@@ -13,7 +13,7 @@ public class ThemesChoiceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.themes_choice);
 
-        findViewById(R.id.day_theme).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.theme_day).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
@@ -21,7 +21,7 @@ public class ThemesChoiceActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.night_theme).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.theme_night).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
