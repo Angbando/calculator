@@ -3,9 +3,10 @@ package com.example.calculator;
 public class Calculate {
     private double oneNum;
     private double twoNum;
+    private double result;
     private double actSelect;
 
-    final int STRING_LENGTH = 17;
+    final static int MAX_STRING_LENGTH = 17;
 
     private StringBuilder inputString = new StringBuilder();
 
@@ -22,7 +23,13 @@ public class Calculate {
     }
 
     public void numPress (int numId) {
-        if (inputString.length() < STRING_LENGTH) {
+        if (state == State.RESULT) {
+            oneNum = result;
+            inputString.setLength(0);
+            state = State.TWO_NUM_INP;
+        }
+
+        if (inputString.length() < MAX_STRING_LENGTH) {
             if (numId == R.id.button0) {
                 inputString.append("0");
             } else if (numId == R.id.button1) {
@@ -43,7 +50,7 @@ public class Calculate {
                 inputString.append("8");
             } else if (numId == R.id.button9) {
                 inputString.append("9");
-            } else if (numId == R.id.comma) {
+            } else if (numId == R.id.comma && inputString.indexOf(".") == -1  && inputString.length() != 0) {
                 inputString.append(".");
             }
         }
@@ -55,15 +62,19 @@ public class Calculate {
             state = State.RESULT;
             inputString.setLength(0);
             if (actSelect == R.id.plus) {
-                inputString.append(oneNum + twoNum);
+                result = oneNum + twoNum;
+                inputString.append(result);
             } else if (actSelect == R.id.minus) {
-                inputString.append(oneNum - twoNum);
+                result = oneNum - twoNum;
+                inputString.append(result);
             } else if (actSelect == R.id.multiply) {
-                inputString.append(oneNum * twoNum);
+                result = oneNum * twoNum;
+                inputString.append(result);
             } else if (actSelect == R.id.divide) {
-                inputString.append(oneNum / twoNum);
+                result = oneNum / twoNum;
+                inputString.append(result);
             }
-        } else if (inputString.length() > 0 && state == State.ONE_NUM_INP) {
+        } else if (inputString.length() > 0 && state == State.ONE_NUM_INP || state == State.RESULT) {
             oneNum = Double.parseDouble(inputString.toString());
             state = State.TWO_NUM_INP;
             inputString.setLength(0);
